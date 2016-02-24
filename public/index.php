@@ -1,10 +1,5 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-
 if (PHP_SAPI == 'cli-server') {
     // To help the built-in PHP dev server, check if the request was actually for
     // something which should probably be served as a static file
@@ -19,6 +14,11 @@ define("APP_DIRECTORY" ,realpath(__DIR__).'/../src/app');
 define("CONFIG_DIRECTORY" ,realpath(__DIR__).'/../src/config');
 
 
+//Bootstrap Environment Variables
+$localConfigArray = require ROOT_DIRECTORY . 'env.php';
+foreach($localConfigArray as $k => $v){
+    putenv("$k=$v");
+}
 
 
 require __DIR__ . '/../vendor/autoload.php';
@@ -28,6 +28,10 @@ require __DIR__ . '/../vendor/autoload.php';
 // Instantiate the app
 $settings = require __DIR__ . '/../src/settings.php';
 $app = new \Slim\App($settings);
+
+
+
+require __DIR__ . '/../src/helpers.php';
 
 // Set up dependencies
 require __DIR__ . '/../src/dependencies.php';

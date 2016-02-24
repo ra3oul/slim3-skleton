@@ -4,9 +4,9 @@ return [
         'driver'    => 'mysql',
         'host'      => 'localhost',
         'port'      => '',
-        'database'  => 'tourism',
-        'username'  => 'root',
-        'password'  => '123456',
+        'database'  => env('DB_DATABASE','tourism'),
+        'username'  => env('DB_USERNAME','tourism'),
+        'password'  => env('DB_PASSWORD','123456'),
         'charset'   => 'utf8',
         'collation' => 'utf8_unicode_ci',
 ];

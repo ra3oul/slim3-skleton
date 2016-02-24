@@ -24,7 +24,7 @@ class HomeController extends BaseController
     public function show(Request $request, Response $response, $args)
     {
 
-        var_dump($this->app->get('config')->get('app'));
+        var_dump($this->app->get('config')->get('database'));
         die();
         $foo = new CreateFooTable();
         $foo->up();

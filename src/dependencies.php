@@ -27,5 +27,11 @@ $container['model'] = function ($c)
 //controller dependency injection resolver
 $container['Tourism\http\controllers\HomeController']=function ($c)
 {
-  return new \Tourism\http\controllers\HomeController($c->get('logger'));
+  return new \Tourism\http\controllers\HomeController($c);
 };
+
+
+//Bootstrap Illuminate Config Service
+
+$confLoader = new \Tourism\services\config\LoadConfiguration();
+$confLoader->bootstrap($container);

@@ -26,6 +26,7 @@
         "slim/slim": "^3.1",
         "slim/php-view": "^2.0",
         "monolog/monolog": "^1.17",
-        "illuminate/database": "5.2.*"
+        "illuminate/database": "5.2.*",
+        "illuminate/config":"5.2.*"
     }
 }

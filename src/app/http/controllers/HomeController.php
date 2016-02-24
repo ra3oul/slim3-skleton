@@ -6,26 +6,26 @@ namespace Tourism\http\controllers ;
  * Date: 2/24/16
  * Time: 12:51 PM
  */
-use Psr\Log\LoggerInterface;
+use Interop\Container\ContainerInterface;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 use Tourism\database\migrations\CreateFooTable;
-use Tourism\models\BaseModel;
 
 class HomeController extends BaseController
 {
-    protected $logger ;
+    protected $app ;
 
-    public function __construct(LoggerInterface $logger )
+    public function __construct(ContainerInterface $app )
     {
-        $this->logger=$logger;
-
+        $this->app=$app;
 
     }
 
     public function show(Request $request, Response $response, $args)
     {
 
+        var_dump($this->app->get('config')->get('app'));
+        die();
         $foo = new CreateFooTable();
         $foo->up();
 

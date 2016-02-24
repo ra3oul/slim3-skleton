@@ -7,15 +7,14 @@
  */
 
 
-$settings = array(
-    'driver' => 'mysql',
-    'host' => '127.0.0.1',
-    'database' => 'tourism',
-    'username' => 'root',
-    'password' => '12345',
-    'collation' => 'utf8_general_ci',
-    'prefix' => ''
-);
+
+$slimContainer = $app->getContainer();
+$config = $slimContainer->get('config');
+
+
+
+
+$settings = $config->get('database');
 
 // Bootstrap Eloquent ORM
 $container = new Illuminate\Container\Container;

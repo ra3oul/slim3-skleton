@@ -6,9 +6,15 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Josh Lockhart",
-            "email": "info@joshlockhart.com",
-            "homepage": "http://www.joshlockhart.com/"
+            "name": "rasoul abdollahi ",
+            "email": "ra3oul.a@mabna.com",
+            "homepage": "rasoul.me"
+        }
+        ,
+        {
+            "name" : "majid abdolhosseini",
+            "email" : "",
+            "homepage" : ""
         }
     ],
     "autoload": {

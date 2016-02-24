@@ -1,4 +1,5 @@
 <?php
+namespace  Tourism\http\controllers;
 
 /**
  * Created by PhpStorm.
@@ -6,7 +7,7 @@
  * Date: 2/24/16
  * Time: 12:50 PM
  */
-final class BaseController
+abstract class BaseController
 {
 
 }

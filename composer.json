@@ -11,8 +11,9 @@
         }
         ,
         {
-            "name" : "majid abdolhosseini"
-
+            "name": "majid abdolhosseini",
+            "email": "majid.a@mabna.com",
+            "homepage":"http://mhndev.com"
         }
     ],
     "autoload": {

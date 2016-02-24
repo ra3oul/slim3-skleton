@@ -9,6 +9,7 @@ namespace Tourism\http\controllers ;
 use Psr\Log\LoggerInterface;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
+use Tourism\models\BaseModel;
 
 class HomeController extends BaseController
 {
@@ -23,6 +24,7 @@ class HomeController extends BaseController
 
     public function show(Request $request, Response $response, $args)
     {
+
 
         return $request->getMethod();
     }

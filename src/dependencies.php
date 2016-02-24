@@ -19,6 +19,11 @@ $container['logger'] = function ($c) {
 };
 
 
+$container['model'] = function ($c)
+{
+
+
+};
 //controller dependency injection resolver
 $container['Tourism\http\controllers\HomeController']=function ($c)
 {

@@ -2,6 +2,7 @@
 // Routes
 
 $app->get('/foo','Tourism\http\controllers\HomeController:show');
+
 //
 //$app->get('/[{name}]', function ($request, $response, $args) {
 //    // Sample log message

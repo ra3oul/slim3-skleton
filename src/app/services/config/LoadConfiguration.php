@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: majid
+ * Date: 2/24/16
+ * Time: 5:49 PM
+ */
 namespace Tourism\services\config;
 
 use Illuminate\Config\Repository;

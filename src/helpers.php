@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: majid
+ * Date: 2/24/16
+ * Time: 6:37 PM
+ */
 use Illuminate\Support\Str;
 
 if (! function_exists('env')) {

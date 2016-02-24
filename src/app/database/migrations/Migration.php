@@ -9,6 +9,7 @@
 namespace Tourism\database\migrations;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
+use Interop\Container\ContainerInterface;
 
 class Migration
 {
@@ -17,22 +18,11 @@ class Migration
     /** @var \Illuminate\Database\Schema\Builder $capsule */
     public $schema;
 
-    public function __construct()
+    public function __construct(ContainerInterface $app)
     {
         $this->capsule = new Capsule();
-        //todo should be in config hal nadaram felan configo shanbe mizanam !
-
-        $this->capsule->addConnection([
-            'driver'    => 'mysql',
-            'host'      => 'localhost',
-            'port'      => '',
-            'database'  => 'tourism',
-            'username'  => 'root',
-            'password'  => '1234',
-            'charset'   => 'utf8',
-            'collation' => 'utf8_unicode_ci',
-        ]);
-
+        $databaseConfig = $app->get('config')->get('database');
+        $this->capsule->addConnection($databaseConfig);
         $this->capsule->bootEloquent();
         $this->capsule->setAsGlobal();
         $this->schema = $this->capsule->schema();

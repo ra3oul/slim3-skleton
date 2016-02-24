@@ -12,6 +12,14 @@ use Psr\Http\Message\ResponseInterface as Response;
 
 class HomeController extends BaseController
 {
+    protected $logger ;
+
+    public function __construct(LoggerInterface $logger )
+    {
+        $this->logger=$logger;
+
+
+    }
 
     public function show(Request $request, Response $response, $args)
     {

@@ -17,3 +17,10 @@ $container['logger'] = function ($c) {
     $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], Monolog\Logger::DEBUG));
     return $logger;
 };
+
+
+//controller dependency injection resolver
+$container['Tourism\http\controllers\HomeController']=function ($c)
+{
+  return new \Tourism\http\controllers\HomeController($c->get('logger'));
+};

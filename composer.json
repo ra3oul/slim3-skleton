@@ -1,20 +1,18 @@
 {
-    "name": "slim/slim-skeleton",
-    "description": "A Slim Framework skeleton application for rapid development",
-    "keywords": ["microframework","rest","router", "psr7"],
-    "homepage": "http://github.com/slimphp/Slim-Skeleton",
+    "name": "mabna/tourism",
+    "description": "A simple ",
+    "keywords": ["microframework","rest","router", "psr7" , "tourism"],
     "license": "MIT",
     "authors": [
         {
             "name": "rasoul abdollahi ",
             "email": "ra3oul.a@mabna.com",
-            "homepage": "rasoul.me"
+            "homepage": "http://www.rasoul.me"
         }
         ,
         {
-            "name" : "majid abdolhosseini",
-            "email" : "",
-            "homepage" : ""
+            "name" : "majid abdolhosseini"
+
         }
     ],
     "autoload": {

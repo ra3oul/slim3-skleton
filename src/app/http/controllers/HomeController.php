@@ -6,13 +6,17 @@ namespace Tourism\http\controllers ;
  * Date: 2/24/16
  * Time: 12:51 PM
  */
+use Psr\Log\LoggerInterface;
+use Psr\Http\Message\ServerRequestInterface as Request;
+use Psr\Http\Message\ResponseInterface as Response;
+
 class HomeController extends BaseController
 {
 
-
-    public function show()
+    public function show(Request $request, Response $response, $args)
     {
-        return 'foo';
+
+        return $request->getMethod();
     }
 
 

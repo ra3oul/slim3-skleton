@@ -11,6 +11,11 @@
             "homepage": "http://www.joshlockhart.com/"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Tourism\\": "src/app"
+        }
+    },
     "require": {
         "php": ">=5.5.0",
         "slim/slim": "^3.1",

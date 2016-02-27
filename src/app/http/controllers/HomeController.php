@@ -23,7 +23,8 @@ class HomeController extends BaseController
 
     public function show(Request $request, Response $response, $args)
     {
-        var_dump(config('app'));
+        dd(config('app'));
+
         $foo = new CreateFooTable();
         $foo->up();
 

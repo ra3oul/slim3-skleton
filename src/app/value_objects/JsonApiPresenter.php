@@ -135,12 +135,17 @@ class JsonApiPresenter
         $responseBody  =   [
             'status' => $this->status,
             'message' => $this->message,
-            'description' => empty($this->description) ? ResponseMessages::getMessageFromCode($this->message):  $this->description,
+            'description' =>  $this->description,
             'data' => $this->getData()
         ];
+        //$responseBody = ['data'=>$this->getData()];
+
+        $body = $response->getBody();
+        $body->write(json_encode($responseBody));
+        $response->withBody($body);
+        return $response->withHeader('Content-type', 'application/json')->withStatus($this->statusCode);
 
 
-        return $response->withHeader($this->statusCode)->withBody($responseBody);
 
 //        return new JsonResponse(, $this->statusCode);
     }
@@ -150,12 +155,12 @@ class JsonApiPresenter
      */
     public function toJson()
     {
-        return [
+        return json_encode([
             'status' => $this->status,
             'message' => $this->message,
-            'description' => empty($this->description) ? ResponseMessages::getMessageFromCode($this->message):  $this->description,
+            'description' =>   $this->description,
             'data' => $this->getData()
-        ];
+        ]);
     }
 
     /**

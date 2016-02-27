@@ -189,13 +189,13 @@ class ResponseMessages
      */
     const OLD_PASSWORD_IS_NOT_VALID = "old_password_is_not_valid";
 
-    /**
-     * @param $code
-     * @return string
-     */
-    public static function getMessageFromCode($code)
-    {
-        return trans('messages.' . $code);
-    }
+//    /**
+//     * @param $code
+//     * @return string
+//     */
+//    public static function getMessageFromCode($code)
+//    {
+//        return trans('messages.' . $code);
+//    }
 
 }

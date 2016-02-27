@@ -13,6 +13,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Tourism\value_objects\JsonApiPresenter;
 use Tourism\value_objects\ResponseMessages;
 use Tourism\value_objects\ResponseStatuses;
+use Symfony\Component\HttpFoundation\Response as HttpResponse  ;
 
 class HomeController extends BaseController
 {
@@ -31,7 +32,7 @@ class HomeController extends BaseController
         return (new JsonApiPresenter())
             ->setData(['name' => 'foo', 'fuck' => 'it'])
             ->setStatus(ResponseStatuses::SUCCESS)
-            ->setStatusCode(201)
+            ->setStatusCode(HttpResponse::HTTP_ACCEPTED)
             ->setMessage(ResponseMessages::CREATED)
             ->toJsonResponse($response);
 

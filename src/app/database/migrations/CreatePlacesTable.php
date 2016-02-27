@@ -10,7 +10,7 @@ namespace Tourism\database\migrations;
 use Illuminate\Database\Schema\Blueprint;
 
 /**
- * Class CreateFooTable
+ * Class CreatePlacesTable
  * @package Tourism\database\migrations
  */
 class CreatePlacesTable extends Migration
@@ -23,6 +23,8 @@ class CreatePlacesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('slug');
+
+            $table->integer('category_id')->unsigned();
             $table->text('description');
             $table->float('lat');
             $table->float('lon');
@@ -37,6 +39,11 @@ class CreatePlacesTable extends Migration
             $table->foreign('user_id')
                 ->references('id')->on('users')
                 ->onDelete('cascade');
+
+            $table->foreign('category_id')
+                ->references('id')->on('categories')
+                ->onDelete('cascade');
+
         });
     }
 

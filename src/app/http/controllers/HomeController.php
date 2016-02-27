@@ -10,7 +10,6 @@ namespace Tourism\http\controllers;
 use Interop\Container\ContainerInterface;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
-use Tourism\database\migrations\CreateFooTable;
 use Tourism\value_objects\JsonApiPresenter;
 use Tourism\value_objects\ResponseMessages;
 use Tourism\value_objects\ResponseStatuses;
@@ -29,7 +28,12 @@ class HomeController extends BaseController
     public function show(Request $request, Response $response, $args)
     {
 
-        return (new JsonApiPresenter())->setData(['name' => 'foo', 'fuck' => 'it'])->setStatus(ResponseStatuses::SUCCESS)->setStatusCode(201)->setMessage(ResponseMessages::CREATED)->toJsonResponse($response);
+        return (new JsonApiPresenter())
+            ->setData(['name' => 'foo', 'fuck' => 'it'])
+            ->setStatus(ResponseStatuses::SUCCESS)
+            ->setStatusCode(201)
+            ->setMessage(ResponseMessages::CREATED)
+            ->toJsonResponse($response);
 
 
     }

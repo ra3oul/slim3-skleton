@@ -9,6 +9,8 @@ $app->get('/', function ($request, $response, $args) {
 
 
 $app->get('/foo','Tourism\http\controllers\HomeController:show');
+$app->post('/foo','Tourism\http\controllers\HomeController:foo');
+
 
 
 //$app->get('/[{name}]', function ($request, $response, $args) {

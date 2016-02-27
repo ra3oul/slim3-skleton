@@ -10,7 +10,7 @@ namespace Tourism\database\migrations;
 use Illuminate\Database\Schema\Blueprint;
 
 /**
- * Class CreateFooTable
+ * Class CreateCheckinsTable
  * @package Tourism\database\migrations
  */
 class CreateCheckinsTable extends Migration
@@ -21,8 +21,8 @@ class CreateCheckinsTable extends Migration
 
         $this->schema->create('checkins', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('user_id');
-            $table->string('place_id');
+            $table->integer('user_id')->unsigned();
+            $table->integer('place_id')->unsigned();
             $table->text('description');
             $table->timestamps();
 

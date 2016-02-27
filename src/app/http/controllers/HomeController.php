@@ -28,10 +28,7 @@ class HomeController extends BaseController
 
     public function show(Request $request, Response $response, $args)
     {
-//        $body = $response->getBody();
-//        $body->write(json_encode(['foo'=>'bar']));
-//        $response->withBody($body);
-//        return $response->withHeader('Content-type', 'application/json')->withStatus(400);
+
         return (new JsonApiPresenter())->setData(['name' => 'foo', 'fuck' => 'it'])->setStatus(ResponseStatuses::SUCCESS)->setStatusCode(201)->setMessage(ResponseMessages::CREATED)->toJsonResponse($response);
 
 

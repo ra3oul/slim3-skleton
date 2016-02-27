@@ -28,5 +28,9 @@
         "monolog/monolog": "^1.17",
         "illuminate/database": "5.2.*",
         "illuminate/config":"5.2.*"
+    },
+
+    "require-dev": {
+        "symfony/var-dumper": "3.0.*"
     }
 }

@@ -14,6 +14,7 @@ use Tourism\database\migrations\CreateFooTable;
 class HomeController extends BaseController
 {
     protected $app ;
+    protected $jsonApiPresenter  ;
 
     public function __construct(ContainerInterface $app )
     {
@@ -24,12 +25,7 @@ class HomeController extends BaseController
     public function show(Request $request, Response $response, $args)
     {
 
-        var_dump($this->app->get('config')->get('database'));
-        die();
-        $foo = new CreateFooTable();
-        $foo->up();
 
-        return $request->getMethod();
     }
 
 

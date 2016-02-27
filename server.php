@@ -12,6 +12,8 @@ $settings = require ROOT_DIRECTORY . '/src/settings.php';
 
 $app = new \Slim\App($settings);
 
+
+
 //@Todo implement migration and seeder cli call
 switch($argv[1]){
     case 'migration':

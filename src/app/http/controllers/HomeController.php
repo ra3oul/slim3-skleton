@@ -47,7 +47,7 @@ class HomeController extends BaseController
     {
 
 
-         $this->fooValidator->validate((object)$request->getParsedBody(),$response);
+          $this->fooValidator->validate((object)$request->getParsedBody(),$response);
 
 
     }

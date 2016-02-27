@@ -31,6 +31,20 @@ $app = new \Slim\App($settings);
 
 
 
+
+
+$c = $app->getContainer();
+$c['errorHandler'] = function ($c) {
+    return function ($request, $response, $exception) use ($c) {
+
+
+        $globalExceptionHandler = new Tourism\exception\handler();
+       return  $globalExceptionHandler->render($exception,$response);
+
+    };
+};
+
+
 require __DIR__ . '/../src/helpers.php';
 
 // Set up dependencies

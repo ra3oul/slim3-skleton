@@ -1,5 +1,7 @@
 <?php
 // Routes
+
+
 $app->get('/', function ($request, $response, $args) {
 
     var_dump($this->config->get('database.driver'));

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0e03c34821b2876d6a989f40f24a8ccb",
-    "content-hash": "f4795e11ad5d460b91cb5e1ac5298e9a",
+    "hash": "3bf6e698b13099c9b0ade3ef9efdf5bb",
+    "content-hash": "4fc7ee4049789da15bb70c88ce2a0468",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -103,7 +103,7 @@
         },
         {
             "name": "illuminate/config",
-            "version": "v5.2.19",
+            "version": "v5.2.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/config.git",
@@ -148,16 +148,16 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v5.2.19",
+            "version": "v5.2.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "834233e20704ec6573593a0a8e8bfe9e28d23b67"
+                "reference": "ba7a8b3c24535ab102ebe9738a0003846c372b95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/834233e20704ec6573593a0a8e8bfe9e28d23b67",
-                "reference": "834233e20704ec6573593a0a8e8bfe9e28d23b67",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/ba7a8b3c24535ab102ebe9738a0003846c372b95",
+                "reference": "ba7a8b3c24535ab102ebe9738a0003846c372b95",
                 "shasum": ""
             },
             "require": {
@@ -187,20 +187,20 @@
             ],
             "description": "The Illuminate Container package.",
             "homepage": "http://laravel.com",
-            "time": "2016-01-18 22:49:36"
+            "time": "2016-02-22 06:42:06"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v5.2.19",
+            "version": "v5.2.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "511a6798e097666b95c6ef3f339e386cc006feba"
+                "reference": "eea3cf7ce90651e067a914d16383b019da45fcb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/511a6798e097666b95c6ef3f339e386cc006feba",
-                "reference": "511a6798e097666b95c6ef3f339e386cc006feba",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/eea3cf7ce90651e067a914d16383b019da45fcb5",
+                "reference": "eea3cf7ce90651e067a914d16383b019da45fcb5",
                 "shasum": ""
             },
             "require": {
@@ -229,20 +229,20 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "http://laravel.com",
-            "time": "2016-01-07 19:57:38"
+            "time": "2016-02-22 09:18:57"
         },
         {
             "name": "illuminate/database",
-            "version": "v5.2.19",
+            "version": "v5.2.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "e78709a47c4aeef6470654f8fbb76928c0700eeb"
+                "reference": "8b0068c326652332fd364399f4d8cce894953172"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/e78709a47c4aeef6470654f8fbb76928c0700eeb",
-                "reference": "e78709a47c4aeef6470654f8fbb76928c0700eeb",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/8b0068c326652332fd364399f4d8cce894953172",
+                "reference": "8b0068c326652332fd364399f4d8cce894953172",
                 "shasum": ""
             },
             "require": {
@@ -289,20 +289,20 @@
                 "orm",
                 "sql"
             ],
-            "time": "2016-02-17 17:31:14"
+            "time": "2016-02-24 15:02:47"
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v5.2.19",
+            "version": "v5.2.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
-                "reference": "4ffa913d1fdb69b948dddc57d5fafa0a65c37213"
+                "reference": "ec2df9bb97fbc08776ed1df399a323440e6db563"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/4ffa913d1fdb69b948dddc57d5fafa0a65c37213",
-                "reference": "4ffa913d1fdb69b948dddc57d5fafa0a65c37213",
+                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/ec2df9bb97fbc08776ed1df399a323440e6db563",
+                "reference": "ec2df9bb97fbc08776ed1df399a323440e6db563",
                 "shasum": ""
             },
             "require": {
@@ -339,20 +339,20 @@
             ],
             "description": "The Illuminate Filesystem package.",
             "homepage": "http://laravel.com",
-            "time": "2016-02-16 14:28:17"
+            "time": "2016-02-24 03:13:07"
         },
         {
             "name": "illuminate/support",
-            "version": "v5.2.19",
+            "version": "v5.2.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "6443a072215137161dcfc56385af95dd6eceaaad"
+                "reference": "6749fab3f3d38d8b15427536a8e7bbdc57497c9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/6443a072215137161dcfc56385af95dd6eceaaad",
-                "reference": "6443a072215137161dcfc56385af95dd6eceaaad",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/6749fab3f3d38d8b15427536a8e7bbdc57497c9e",
+                "reference": "6749fab3f3d38d8b15427536a8e7bbdc57497c9e",
                 "shasum": ""
             },
             "require": {
@@ -395,7 +395,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "http://laravel.com",
-            "time": "2016-02-16 14:39:24"
+            "time": "2016-02-22 20:29:02"
         },
         {
             "name": "monolog/monolog",
@@ -748,16 +748,16 @@
         },
         {
             "name": "slim/slim",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slimphp/Slim.git",
-                "reference": "03b44a4b41896ba42c78bbd5fa172cd79e650496"
+                "reference": "835425f5945a25509eeab885e80617948e68371d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Slim/zipball/03b44a4b41896ba42c78bbd5fa172cd79e650496",
-                "reference": "03b44a4b41896ba42c78bbd5fa172cd79e650496",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/835425f5945a25509eeab885e80617948e68371d",
+                "reference": "835425f5945a25509eeab885e80617948e68371d",
                 "shasum": ""
             },
             "require": {
@@ -811,7 +811,7 @@
                 "micro",
                 "router"
             ],
-            "time": "2016-01-08 15:37:50"
+            "time": "2016-02-25 08:15:17"
         },
         {
             "name": "symfony/finder",
@@ -986,7 +986,71 @@
             "time": "2016-02-02 13:44:19"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "symfony/var-dumper",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "24bb94807eff00db49374c37ebf56a0304e8aef3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/24bb94807eff00db49374c37ebf56a0304e8aef3",
+                "reference": "24bb94807eff00db49374c37ebf56a0304e8aef3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "twig/twig": "~1.20|~2.0"
+            },
+            "suggest": {
+                "ext-symfony_debug": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony mechanism for exploring and dumping PHP variables",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "time": "2016-01-07 13:38:51"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

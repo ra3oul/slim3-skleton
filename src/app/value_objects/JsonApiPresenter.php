@@ -138,8 +138,6 @@ class JsonApiPresenter
             'description' =>  $this->description,
             'data' => $this->getData()
         ];
-        //$responseBody = ['data'=>$this->getData()];
-
         $body = $response->getBody();
         $body->write(json_encode($responseBody));
         $response->withBody($body);

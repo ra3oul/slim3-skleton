@@ -9,12 +9,7 @@
 namespace Tourism\services\validation;
 
 use Psr\Http\Message\ResponseInterface;
-use Respect\Validation\Exceptions\NestedValidationException;
 use Respect\Validation\Validator as v;
-use Symfony\Component\HttpFoundation\Response;
-use Tourism\value_objects\JsonApiPresenter;
-use Tourism\value_objects\ResponseMessages;
-use Tourism\value_objects\ResponseStatuses;
 
 class FooValidator
 {

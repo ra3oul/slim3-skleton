@@ -9,14 +9,14 @@ if (PHP_SAPI == 'cli-server.php') {
     }
 }
 
-define("ROOT_DIRECTORY" ,realpath(__DIR__).'/../');
-define("APP_DIRECTORY" ,realpath(__DIR__).'/../src/app');
-define("CONFIG_DIRECTORY" ,realpath(__DIR__).'/../src/config');
+define("ROOT_DIRECTORY", realpath(__DIR__) . '/../');
+define("APP_DIRECTORY", realpath(__DIR__) . '/../src/app');
+define("CONFIG_DIRECTORY", realpath(__DIR__) . '/../src/config');
 
 
 //Bootstrap Environment Variables
 $localConfigArray = require ROOT_DIRECTORY . 'env.php';
-foreach($localConfigArray as $k => $v){
+foreach ($localConfigArray as $k => $v) {
     putenv("$k=$v");
 }
 
@@ -30,16 +30,13 @@ $settings = require __DIR__ . '/../src/settings.php';
 $app = new \Slim\App($settings);
 
 
-
-
-
 $c = $app->getContainer();
 $c['errorHandler'] = function ($c) {
     return function ($request, $response, $exception) use ($c) {
 
 
         $globalExceptionHandler = new Tourism\exception\handler();
-       return  $globalExceptionHandler->render($exception,$response);
+        return $globalExceptionHandler->render($exception, $response);
 
     };
 };

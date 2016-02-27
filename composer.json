@@ -28,7 +28,8 @@
         "monolog/monolog": "^1.17",
         "illuminate/database": "5.2.*",
         "illuminate/config":"5.2.*",
-        "symfony/http-foundation": "^3.0"
+        "symfony/http-foundation": "^3.0",
+        "respect/validation": "^1.0"
     },
 
     "require-dev": {

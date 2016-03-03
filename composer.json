@@ -1,5 +1,5 @@
 {
-    "name": "mabna/tourism",
+    "name": "slim/starter-kit",
     "description": "A simple ",
     "keywords": ["microframework","rest","router", "psr7" , "tourism"],
     "license": "MIT",
@@ -9,12 +9,7 @@
             "email": "ra3oul.a@mabna.com",
             "homepage": "http://www.rasoul.me"
         }
-        ,
-        {
-            "name": "majid abdolhosseini",
-            "email": "majid.a@mabna.com",
-            "homepage":"http://mhndev.com"
-        }
+
     ],
     "autoload": {
         "psr-4": {
